@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+    <div class="Heading">
+        <div class="data">
+            <button class="btnH"><a href="https://tarunthakur7974.github.io/Resume/#project">Home</a></button>
+            <button onclick="about()" class="btnH">About</button>
+        </div>
+        <div class="aboutsdata">
+            <ul id='abouts'>
+                <button onclick="closed()" style="float:right">X</button>
+                <li>"Todolist can help you to create a list of TODO."</li>
+                <li>"If the title or description is empty, you cannot add the todo.".</li>
+                <li>"But now this todo is not stored as data in local storage."</li>
+                <li>""But now this todo cannot be added or deleted as data in local storage. However, it will still be
+                    displayed correctly.""</li>
+                <li>"I will fix all the problems as soon as possible."</li>
+            </ul>
+        </div>
+    </div>
+    <h1 class="hone">Heading</h1>
+    <div class="container">
+        <input class="textinput" placeholder="Enter a Title" id='headi' />
+    </div>
+    <h1 class="hone">todolist</h1>
+    <div class="container">
+        <textarea class="texttext" placeholder="Enter a Description" id='todoi'></textarea>
+    </div>
+
+    <div class="cont">
+        <button class="btnc" onclick="add()" id="btnone">Add</button>
+        <button class="btnc" id="clearbtn" onclick="cleared()" id="btntwo">Clear</button>
+    </div>
+    <div class="todoos">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>TODO Titles</th>
+                    <th>TODO Descriptions</th>
+                    <!-- <th>Delete Buttons</th> -->
+                </tr>
+            </thead>
+            <tbody class="items">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
